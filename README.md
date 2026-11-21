@@ -1,1 +1,179 @@
-# sekian
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sayang ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Quicksand',sans-serif;background:linear-gradient(180deg,#ffe8ef 0%,#fff5e8 45%,#e8f8ff 100%);min-height:100vh;overflow-x:hidden;color:#5a3a4a}
+  .blob{position:fixed;border-radius:50%;filter:blur(40px);opacity:.6;z-index:0;animation:ngambang 6s ease-in-out infinite}
+  @keyframes ngambang{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-20px) scale(1.08)}}
+  .b1{width:260px;height:260px;background:#ffb3c6;top:-60px;left:-80px}
+  .b2{width:220px;height:220px;background:#ffd9a0;top:35%;right:-70px;animation-delay:1s}
+  .b3{width:280px;height:280px;background:#a8e6ff;bottom:-80px;left:20%;animation-delay:2s}
+  .wrap{position:relative;z-index:2;max-width:460px;margin:0 auto;padding:28px 18px 70px;text-align:center}
+  .pill{display:inline-flex;align-items:center;gap:6px;background:#fff;padding:8px 16px;border-radius:100px;font-size:13px;font-weight:700;box-shadow:0 8px 20px rgba(255,150,180,.25);transform:rotate(-2deg)}
+  .judul{margin:22px 0 8px;line-height:.9}
+  .judul span{display:inline-block;animation:goyang 2.5s ease-in-out infinite}
+  @keyframes goyang{0%,100%{transform:rotate(-2deg) translateY(0)}50%{transform:rotate(2deg) translateY(-6px)}}
+  .judul .a{font-size:54px;font-weight:700;color:#ff5e8a}
+  .judul .b{font-size:54px;font-weight:700;color:#ff9f45}
+  .tulisan-tangan{font-family:'Caveat',cursive;font-size:42px;color:#7a5cff;line-height:1;margin-top:4px;transform:rotate(-1deg)}
+  .sub{font-size:14.5px;line-height:1.7;opacity:.85;margin-top:10px}
+  .card{background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-radius:40px 40px 30px 50px / 50px 40px 40px 30px;padding:26px 20px 22px;margin-top:26px;box-shadow:0 20px 40px rgba(255,120,160,.22);transform:rotate(-.5deg)}
+  .foto{width:128px;height:128px;margin:-58px auto 8px;position:relative;border-radius:45% 55% 55% 45% / 55% 45% 55% 45%;overflow:hidden;border:5px solid #fff;box-shadow:0 12px 25px rgba(0,0,0,.18);animation:bentuk 5s ease-in-out infinite}
+  @keyframes bentuk{0%,100%{border-radius:45% 55% 55% 45% / 55% 45% 55% 45%}50%{border-radius:60% 40% 45% 55% / 45% 55% 40% 60%}}
+  .foto img{width:100%;height:100%;object-fit:cover}
+  .foto span{position:absolute;bottom:6px;right:6px;background:#ffd93d;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
+  .nama{font-size:26px;font-weight:700;color:#ff4d7a}
+  .desc{font-size:14px;line-height:1.65;color:#7a5a6a;margin-top:6px}
+  .kue-box{margin:20px 0 8px}
+  .lilin{display:flex;justify-content:center;gap:14px}
+  .lilin i{width:9px;height:30px;background:repeating-linear-gradient(#ff5e8a 0 6px,#fff 6px 12px);border-radius:20px;display:block;position:relative}
+  .lilin i:after{content:'';position:absolute;top:-15px;left:50%;transform:translateX(-50%);width:15px;height:19px;background:#ffcc00;border-radius:50% 50% 50% 50% / 70% 70% 30% 30%;box-shadow:0 0 18px #ffcc00;animation:api .25s infinite alternate}
+  @keyframes api{from{transform:translateX(-50%) scale(1) rotate(-4deg)}to{transform:translateX(-50%) scale(1.15) rotate(4deg)}}
+  .lilin.mati i:after{display:none}
+  .kue{font-size:86px;cursor:pointer;display:inline-block;animation:kueGoyang 2s ease-in-out infinite}
+  @keyframes kueGoyang{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg) translateY(-4px)}}
+  .hint{font-size:12.5px;color:#aaa;margin-top:4px}
+  input{width:100%;padding:13px;border:2px dashed #ffb3c6;border-radius:100px;outline:none;text-align:center;font-family:inherit;font-weight:700;font-size:14px;background:#fff8fa;margin-top:16px}
+  .btn-row{display:flex;gap:10px;margin-top:12px}
+  button{flex:1;border:none;padding:13px;border-radius:100px;font-weight:700;font-size:13.5px;cursor:pointer;transition:.2s;box-shadow:0 8px 18px rgba(0,0,0,.08)}
+  button:active{transform:scale(.94) rotate(-1deg)}
+  .pink{background:#ff5e8a;color:#fff} .kuning{background:#ffd93d;color:#5a3a00} .ungu{background:#7a5cff;color:#fff} .putih{background:#fff;color:#ff5e8a;border:1.5px solid #ffd1dc}
+  #pesan{margin-top:14px;background:#fff0f5;border-radius:20px 25px 18px 28px;padding:13px;font-weight:700;color:#ff4d7a;font-size:14.5px;min-height:48px;display:flex;align-items:center;justify-content:center;line-height:1.4}
+  .sticker{display:flex;justify-content:center;gap:10px;margin-top:16px;flex-wrap:wrap}
+  .sticker span{background:#fff;padding:9px 14px;border-radius:100px;font-size:13px;font-weight:700;box-shadow:0 6px 15px rgba(0,0,0,.06)}
+  .surat{background:#fff;border-radius:30px 45px 35px 40px / 40px 30px 45px 35px;padding:22px 20px;margin-top:22px;text-align:left;box-shadow:0 15px 30px rgba(0,0,0,.08);transform:rotate(.6deg);line-height:1.7;font-size:14px}
+  .footer{margin-top:24px;font-size:12px;opacity:.6}
+  .balon{position:fixed;bottom:-70px;z-index:1;font-size:38px;animation:naik linear infinite}
+  @keyframes naik{0%{transform:translateY(0)}100%{transform:translateY(-110vh);opacity:0}}
+  .confetti{position:fixed;top:-12px;z-index:20;pointer-events:none;animation:jatuh linear forwards}
+  @keyframes jatuh{to{transform:translateY(105vh) rotate(680deg)}}
+  .love{position:fixed;bottom:18px;right:18px;width:58px;height:58px;border-radius:50%;background:#ff4d7a;border:none;font-size:28px;box-shadow:0 12px 25px rgba(255,77,122,.5);z-index:30;cursor:pointer;animation:denyut 1.2s infinite}
+  @keyframes denyut{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+  /* Tombol Play awal - muncul kalau autoplay ke-block */
+  #playAwal{position:fixed;inset:0;background:rgba(255,230,240,.92);z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;backdrop-filter:blur(5px)}
+  #playAwal button{flex:none;padding:16px 30px;font-size:17px;background:#ff4d7a;color:#fff;border:none;border-radius:100px;font-weight:800;box-shadow:0 12px 25px rgba(255,77,122,.5)}
+</style>
+</head>
+<body>
+
+<!-- LAGU AUTOPLAY -->
+<audio id="musik" loop preload="auto" autoplay>
+  <source src="WhatsApp Audio 2026-11-18 at 19.08.58.mpeg" type="audio/mpeg">
+</audio>
+
+<!-- LAYAR BUKA - KLIK SEKALI LANGSUNG MUTER + MASUK -->
+<div id="playAwal">
+  <div style="font-size:70px;animation:goyang 1.5s infinite">🎁</div>
+  <div style="font-family:'Caveat',cursive;font-size:38px;color:#ff4d7a">Ada kejutan buat kamu!</div>
+  <div style="font-size:14px;color:#7a5a6a">Klik tombolnya, lagunya langsung muter 💖</div>
+  <button onclick="bukaKejutan()">Buka Kejutan 💌</button>
+</div>
+
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<div class="balon" style="left:6%;animation-duration:9s">🎈</div>
+<div class="balon" style="left:88%;animation-duration:11s;animation-delay:1s">💖</div>
+
+<div class="wrap">
+  <div class="pill">✨ 23 November • Hari Kamu ✨</div>
+  <div class="judul"><span class="a">Happy</span><br><span class="b">Birthday!</span></div>
+  <div class="tulisan-tangan">buat orang paling spesial ~</div>
+  <p class="sub">Hari ini langitnya ikut seneng, soalnya ada yang ultah 🎂</p>
+  <div class="card">
+    <div class="foto"><img src="via 3.jpeg" alt="foto"><span>🎂</span></div>
+    <div class="nama" id="namaTampil">Buat Kamu ❤️</div>
+    <p class="desc">Semoga tahun ini kamu lebih bahagia, lebih santai, rezekinya ngalir terus, dan semua yang kamu doain pelan-pelan kejadian. Aamiin 🤲</p>
+    <div class="kue-box">
+      <div class="lilin" id="lilin"><i></i><i></i><i></i></div>
+      <div class="kue" id="kue">🎂</div>
+      <div class="hint" id="hint">pencet kuenya buat tiup lilin ✨</div>
+    </div>
+    <input id="namaInput" placeholder="tulis nama yang ultah... misal: Ayang">
+    <div class="btn-row">
+      <button class="pink" onclick="gantiNama()">Ubah Nama ✨</button>
+      <button class="kuning" onclick="confetti()">Confetti 🎊</button>
+    </div>
+    <div class="btn-row">
+      <button class="ungu" onclick="kasihWish()">Wish Random 💌</button>
+      <button class="putih" onclick="putarLagu()">Lagu 🎵 <span id="statusLagu">🔊</span></button>
+    </div>
+    <div id="pesan">🎶 Lagunya lagi muter... 🎶</div>
+    <div class="sticker"><span>🎁 kado</span><span>🍰 kue</span><span>💖 sayang</span></div>
+  </div>
+  <div class="surat">
+    <h3>💌 surat kecil buat kamu</h3>
+    hai... makasih ya udah jadi kamu. makasih udah kuat sejauh ini, udah bertahan walau kadang capek banget.<br><br>
+    tahun ini aku doain kamu gak overthinking lagi, tidur lebih nyenyak, dan dikelilingi orang-orang baik.<br><br>
+    <b>— dari yang selalu bangga sama kamu —</b>
+  </div>
+  <p class="footer">dibuat pake 💖 • pencet ❤️ di pojok kanan bawah</p>
+</div>
+<button class="love" onclick="loveMeledak()">❤️</button>
+
+<script>
+  let nyala = true;
+  const wishes = ["tahun ini kamu harus lebih happy dari tahun lalu! ✨","semoga dapet apa yang selama ini kamu doain 🤲","jangan lupa traktir aku bakso yaa! 🍜","makin cantik / ganteng, makin disayang banyak orang 😍","semoga gak capek-capek lagi, tidurnya nyenyak 💤","wish you all the best, sehat & bahagia selalu! 🎁"];
+  let musik = document.getElementById('musik');
+
+  // Coba autoplay langsung
+  window.addEventListener('load', () => {
+    musik.play().catch(()=>{});
+    setTimeout(confetti, 600);
+  });
+
+  let lagiMuter = true;
+
+function putarLagu(){
+  let musik = document.getElementById('musik');
+  if(lagiMuter){
+    musik.pause();
+    document.getElementById('pesan').innerText = "Lagunya berhenti ⏸️";
+    document.getElementById('statusLagu').innerText = "🔇";
+    lagiMuter = false;
+  } else {
+    musik.play();
+    document.getElementById('pesan').innerText = "🎶 Happy Birthday To You~ 🎶";
+    document.getElementById('statusLagu').innerText = "🔊";
+    lagiMuter = true;
+  }
+}
+  function bukaKejutan(){
+    musik.play();
+    document.getElementById('playAwal').style.display = 'none';
+    document.getElementById('pesan').innerText = "🎶 Happy Birthday To You~ 🎶";
+    confetti();
+    confetti();
+  }
+  function gantiNama(){
+    let n = document.getElementById('namaInput').value.trim();
+    if(!n){ alert("isi namanya dulu dong!"); return; }
+    document.getElementById('namaTampil').innerText = "Buat " + n + " ❤️";
+    document.getElementById('pesan').innerText = "happy birthday " + n + "!! 🎂🎉";
+    confetti();
+  }
+  document.getElementById('kue').addEventListener('click', ()=>{
+    let lilin = document.getElementById('lilin');
+    if(nyala){ lilin.classList.add('mati'); document.getElementById('kue').innerText = "🍰"; document.getElementById('pesan').innerText = "yeay lilin padam! make a wish ya 🌟"; nyala = false; }
+    else { lilin.classList.remove('mati'); document.getElementById('kue').innerText = "🎂"; document.getElementById('pesan').innerText = wishes[Math.floor(Math.random()*wishes.length)]; nyala = true; }
+    confetti();
+  });
+  function kasihWish(){ document.getElementById('pesan').innerText = wishes[Math.floor(Math.random()*wishes.length)]; confetti(); }
+  function confetti(){
+    let warna = ['#ff5e8a','#ffd93d','#7a5cff','#6ec6ff','#ff9f45','#6bcb77'];
+    for(let i=0;i<80;i++){ let c=document.createElement('div'); c.className='confetti'; c.style.left=Math.random()*100+'vw'; c.style.width=(Math.random()*8+6)+'px'; c.style.height=(Math.random()*10+8)+'px'; c.style.background=warna[Math.floor(Math.random()*warna.length)]; c.style.animationDuration=(Math.random()*2+1.2)+'s'; c.style.borderRadius=Math.random()>0.5?'50%':'4px'; document.body.appendChild(c); setTimeout(()=>c.remove(),3200); }
+  }
+  function loveMeledak(){
+    for(let i=0;i<14;i++){ let e=document.createElement('div'); e.innerText=['❤️','💖','💕','✨'][Math.floor(Math.random()*4)]; e.style.cssText='position:fixed;right:28px;bottom:80px;font-size:28px;z-index:40;transition:all 1.1s ease'; document.body.appendChild(e); setTimeout(()=>{e.style.transform=`translate(${(Math.random()-0.5)*220}px, -${Math.random()*280+100}px) scale(1.4)`; e.style.opacity='0'},50); setTimeout(()=>e.remove(),1200); }
+    confetti();
+  }
+  function putarLagu(){
+    if(musik.paused){ musik.play(); document.getElementById('pesan').innerText = "🎶 Happy Birthday To You~ 🎶"; document.getElementById('statusLagu').innerText = "🔊"; }
+    else { musik.pause(); document.getElementById('pesan').innerText = "Lagunya di-pause ⏸️"; document.getElementById('statusLagu').innerText = "🔇"; }
+  }
+</script>
+</body>
+</html>
